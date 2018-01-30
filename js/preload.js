@@ -53,7 +53,8 @@
     $.preload(
         [
             "img/logo.png",
-            "img/test.jpg",
+            "img/mountain.jpg",
+            "img/about/placeholder.jpg",
             "img/contact/success.jpg",
             "img/contact/loading.gif",
             "img/modal/desktop.jpg",

@@ -200,7 +200,7 @@ $(window).on("load resize",function(){
 	var card  = $(".work .card"),
 	 	width = card.width();
 
-	$(card).css("height", width)
+	$(card).css("height", width);
 
 });
 
