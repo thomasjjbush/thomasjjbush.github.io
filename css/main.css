@@ -40,9 +40,10 @@ body {
         font-family: Anton;
         font-size: 3vmax;
         line-height: 5vmax;
-        display: block; }
-        body main section .structure span.title:after {
-          content: "..."; }
+        display: block;
+        width: auto;
+        white-space: nowrap;
+        overflow: hidden; }
     body main section input, body main section textarea {
       font-family: 'Open Sans', sans-serif; }
     @media (max-width: 768px) {
@@ -80,6 +81,28 @@ body * {
 .main .work * {
   -webkit-transform: none;
           transform: none; }
+
+.animated {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
+.myAnimation {
+  -webkit-animation: typewriter steps(11) 1;
+          animation: typewriter steps(11) 1; }
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0; }
+  to {
+    width: auto; } }
+
+@keyframes typewriter {
+  from {
+    width: 0; }
+  to {
+    width: auto; } }
 
 /*-------- 3. preloader ----*/
 .preloader {
@@ -449,8 +472,8 @@ body * {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-perspective: 1150px;
-          perspective: 1150px; }
+  -webkit-perspective: 600px;
+          perspective: 600px; }
   .work .structure p {
     margin: 0px;
     padding-bottom: 50px; }
@@ -460,13 +483,17 @@ body * {
             transform-style: preserve-3d;
     -webkit-transform-origin: 50% 50%;
             transform-origin: 50% 50%;
-    -webkit-transition: -webkit-transform 0.65s;
-    transition: -webkit-transform 0.65s;
-    transition: transform 0.65s;
-    transition: transform 0.65s, -webkit-transform 0.65s;
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: -webkit-transform 0.6s;
+    transition: transform 0.6s;
+    transition: transform 0.6s, -webkit-transform 0.6s;
     position: relative;
     cursor: pointer;
     margin-bottom: 50px; }
+    @media (max-width: 420px) {
+      .work .structure .card {
+        -webkit-transition: none;
+        transition: none; } }
     .work .structure .card div {
       position: absolute;
       top: 0;
