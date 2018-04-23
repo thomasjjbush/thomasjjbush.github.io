@@ -91,7 +91,11 @@
             "img/modal/screens/smart_hub/smart_hub_2.jpg",
             "img/modal/screens/smart_hub/smart_hub_3.jpg",
             "img/modal/screens/smart_hub/smart_hub_4.jpg",
-            "img/modal/screens/the_frame/the_frame_full_0.jpg"
+            "img/modal/screens/the_frame/the_frame_full_0.jpg",
+            "img/modal/screens/blast/blast_0.jpg",
+            "img/modal/screens/blast/blast_1.jpg",
+            "img/modal/screens/blast/blast_2.jpg",
+            "img/modal/screens/blast/blast_3.jpg"
 
         ], 
         {
